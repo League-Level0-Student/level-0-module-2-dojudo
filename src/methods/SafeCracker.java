@@ -10,6 +10,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.JApplet;
 import javax.swing.JOptionPane;
+import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 public class SafeCracker {
 
@@ -19,7 +20,11 @@ public class SafeCracker {
 		 * combinations
 		 */
 		
-
+  for (int i = 0; i<10_000_000;i++){ 
+	System.out.println(i);
+tryCode(i);
+  }
+  
 	}
 
 	static void tryCode(int guess) {
